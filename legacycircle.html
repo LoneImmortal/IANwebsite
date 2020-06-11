@@ -47,7 +47,7 @@
             <a class="btn btn-outline-success btn-sm donate-button" href="https://donorbox.org/bridge-to-the-future" target="_blank">Donate</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="menubar"><i class="fas fa-bars"></i></span>    
+                <span class="menubar"><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
 
@@ -74,28 +74,28 @@
 
                             <div class="pt-5 pb-5">
                                 <!-- <a class="btn btn-success btn-legacy p-2 pr-3 pl-3" target="__blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdkkCHLOKKOvNlUQVOnRw9dWMpXmeTtSow40nRRSHNSNnWKRg/viewform">JOIN THE CHANGE</a> -->
-                                <a class="typeform-share button btn btn-success btn-legacy p-2 pr-3 pl-3" href="https://impactafrica.typeform.com/to/AbAduN" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#DD2643;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+                                <a class="typeform-share button btn btn-success btn-legacy p-2 pr-3 pl-3" data-toggle="modal" data-target="#myModal" style="display:inline-block;text-decoration:none;background-color:#DD2643;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
                                     data-hide-headers=true data-hide-footer=true data-submit-close-delay="2" target="_blank">JOIN THE CHANGE
-                </a>
-                                <script>
-                                    (function() {
-                                        var qs, js, q, s, d = document,
-                                            gi = d.getElementById,
-                                            ce = d.createElement,
-                                            gt = d.getElementsByTagName,
-                                            id = "typef_orm_share",
-                                            b = "https://embed.typeform.com/";
-                                        if (!gi.call(d, id)) {
-                                            js = ce.call(d, "script");
-                                            js.id = id;
-                                            js.src = b + "embed.js";
-                                            q = gt.call(d, "script")[0];
-                                            q.parentNode.insertBefore(js, q)
-                                        }
-                                    })()
-                                </script>
+                                </a>
 
+                            </div>
+                            <div id="myModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" style="height: 500px;">
 
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe id="frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdkkCHLOKKOvNlUQVOnRw9dWMpXmeTtSow40nRRSHNSNnWKRg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6 text-center mb-7" style="color: white">
@@ -225,7 +225,9 @@
 		</footer>
 	</section> -->
     <!-- End of footer section -->
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <style>
         .row {
             margin-left: 0px;
@@ -338,16 +340,28 @@
                 padding: 80px 0 90px;
             }
         }
+        
+        iframe {
+            width: 100%;
+        }
     </style>
     <script>
         $(window).scroll(function() {
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
         });
-    </script>
+        var iframe = document.getElementById('frame');
 
+        iframe.addEventListener('load', function() {
+            console.log(iframe.contentDocument.querySelector('form + div'))
+        })
+        var iframeheight = $('#frame').outerHeight();
+        console.log("What is")
+    </script>
+    <!-- 
     <script type="text/javascript">
         mixpanel.track("Page Loaded");
-    </script>
+    </script> -->
+
 </body>
 
 </html>
