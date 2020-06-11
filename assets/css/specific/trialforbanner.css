@@ -1,0 +1,72 @@
+@media (min-width:1200px) {
+    .intro .intro-text {
+      width: 45%;
+    }
+  }
+  
+  @media (min-width:200px) {
+    .intro .intro-text {
+      left: 0;
+      width: 60%;
+      margin-top: 3rem;
+      position: absolute;
+    }
+  }
+  
+ 
+  
+  @media (min-width:992px) {
+    .intro .intro-text {
+      left: 0;
+      width: 20%;
+      margin-top: 3rem;
+      position: absolute;
+    }
+  }
+  
+  .text-center {
+    text-align: center!important;
+  }
+  
+  .rounded {
+    border-radius: .25rem!important;
+  }
+  
+  .bg-faded {
+    background-color: rgb(33, 136, 56);
+    height: 200px;
+    width: 25%;
+    left: 30px;
+  }
+  
+  .p-5 {
+    padding: 3rem!important;
+  }
+
+  
+  .mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+    font-size: small;
+  }
+  .mb-4{
+      font-size: medium;
+     
+
+  }
+  
+  p {
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+ 
+  
+.filter-green{
+    filter: invert(49%) sepia(72%) saturate(384%) hue-rotate(172deg) brightness(85%) contrast(94%);
+}
+  
+  
+
+  
+  
+                
