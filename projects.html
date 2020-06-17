@@ -78,14 +78,14 @@
         <!-- Our offering section -->
         <div class="d-lg-flex py-8 py-md-11 border-bottom pb-5 pt-5 projects">
             <div class="container pr-md-5 pl-md-5">
-                <h2 class="pt-md-5 text-center pb-md-5" style="color: rgb(250, 189, 62); font-weight: bold;">
+                <h2 class="pt-5 text-center pb-5" style="color: rgb(250, 189, 62); font-weight: bold;">
                     Our Projects
                 </h2>
                 <div class="row pb-md-5">
                     <div class="col-md-5">
                         <img class="project-img" src="assets/img/projects/JENGA-FacebookBanners.png">
                     </div>
-                    <div class="col-md-7 pt-md-3">
+                    <div class="col-md-7 pt-3">
                         <h4 style="color: black; font-weight: bold;">
                             1. Jenga School
                         </h4>
@@ -95,46 +95,52 @@
                         </h5>
                     </div>
                 </div>
-                <div class="row pb-md-5">
-                    <div class="col-md-7 pt-md-3">
+                <div class="row pb-5">
+                    <div class="col-md-5 mobile-only">
+                        <img class="project-img" src="assets/img/projects/SE-FacebookBanners.png">
+                    </div>
+                    <div class="col-md-7 pt-3">
                         <h4 style="color: black; font-weight: bold;">
                             2. Systematic Entrepreneurship
                         </h4>
-                        <h5 class="project-txt pt-md-2">
+                        <h5 class="project-txt pt-2">
                             A school designed to fill the increasing technical talent gap in Africa. Offering subjects such as Data Science and Artificial Intelligence, the school also equips it's students with necessary soft skills ensuring all rounded quality talent is ready to
                             meet the demand
                         </h5>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 desktop-only">
                         <img class="project-img" src="assets/img/projects/SE-FacebookBanners.png">
                     </div>
                 </div>
-                <div class="row pb-md-5">
+                <div class="row pb-5">
 
                     <div class="col-md-5">
                         <img class="project-img" src="assets/img/projects/Launchpad-FacebookBanners.png">
                     </div>
-                    <div class="col-md-7 pt-md-3">
+                    <div class="col-md-7 pt-3">
                         <h4 style="color: black; font-weight: bold;">
                             3. Launchpad
                         </h4>
-                        <h5 class="project-txt pt-md-2">
+                        <h5 class="project-txt pt-2">
                             A school designed to fill the increasing technical talent gap in Africa. Offering subjects such as Data Science and Artificial Intelligence, the school also equips it's students with necessary soft skills ensuring all rounded quality talent is ready to
                             meet the demand
                         </h5>
                     </div>
                 </div>
                 <div class="row pb-md-5">
-                    <div class="col-md-7 pt-md-3">
+                    <div class="col-md-5 mobile-only">
+                        <img class="project-img" src="assets/img/projects/Startbox Logo@2x.png">
+                    </div>
+                    <div class="col-md-7 pt-3">
                         <h4 style="color: black; font-weight: bold;">
                             4. Startbox
                         </h4>
-                        <h5 class="project-txt pt-md-2">
+                        <h5 class="project-txt pt-2">
                             A school designed to fill the increasing technical talent gap in Africa. Offering subjects such as Data Science and Artificial Intelligence, the school also equips it's students with necessary soft skills ensuring all rounded quality talent is ready to
                             meet the demand
                         </h5>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 desktop-only">
                         <img class="project-img" src="assets/img/projects/Startbox Logo@2x.png">
                     </div>
                 </div>
@@ -142,11 +148,11 @@
                     <div class="col-md-5">
                         <img class="project-img" src="assets/img/projects/Done! International Logo@2x.png">
                     </div>
-                    <div class="col-md-7 pt-md-3">
+                    <div class="col-md-7 pt-3">
                         <h4 style="color: black; font-weight: bold;">
                             5. Done! International
                         </h4>
-                        <h5 class="project-txt pt-md-2">
+                        <h5 class="project-txt pt-2">
                             A school designed to fill the increasing technical talent gap in Africa. Offering subjects such as Data Science and Artificial Intelligence, the school also equips it's students with necessary soft skills ensuring all rounded quality talent is ready to
                             meet the demand
                         </h5>
@@ -254,6 +260,9 @@
             #valueProp2 {
                 font-size: 20px;
             }
+            .mobile-only {
+                display: none !important;
+            }
         }
         /*most mobile devices on potrait mode*/
         
@@ -273,11 +282,17 @@
             #valueProp2 {
                 font-size: 19px;
             }
+            .desktop-only {
+                display: none !important;
+            }
         }
         
         @media (min-width: 1024px) {
             #main_content {
                 height: 90vh;
+            }
+            .mobile-only {
+                display: none !important;
             }
         }
         /*Low Resolution Tablets, Mobiles (Landscape)*/
@@ -286,6 +301,9 @@
             #main_content {
                 height: 140vh;
                 padding: 80px 0 90px;
+            }
+            .desktop-only {
+                display: none !important;
             }
         }
     </style>
