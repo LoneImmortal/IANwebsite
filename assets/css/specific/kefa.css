@@ -1139,6 +1139,7 @@ body {
         padding-top: 0 !important;
     }
 }
+
 .styled-text-projects {
     color: rgb(250, 189, 62);
 }
@@ -1161,4 +1162,296 @@ body {
 .project-txt {
     color: black;
     line-height: 30px;
+    
 }
+
+
+
+
+/*====================================
+=            form styling            =
+====================================*/
+
+
+.temp-form-button {
+    background-color: #122742;
+    border: 0 !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    position: relative;
+    transform: perspective(1px) translateZ(0px);
+    transition-duration: 0.3s;
+    transition-property: color;
+    box-shadow: 1px 3px 6px #bababa;
+  }
+  .temp-form-button:hover {
+    background-color: #122742;
+  }
+  .temp-form-button:before {
+    background: #cd559c;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: 50% 0 0;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    z-index: -1;
+  }
+  .temp-form-button:hover:before {
+    transform: scaleY(1);
+  }
+  
+  /*=====  End of button style  ======*/
+
+  
+  .temp-custom-select:focus {
+    outline: none !important;
+  }
+  
+  /*=====  End of select  ======*/
+  /*====================================
+  =            common style            =
+  ====================================*/
+
+  
+  a {
+    outline: 0 !important;
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .custom-row {
+    display: flex;
+  }
+  
+  /*=====  End of common style  ======*/
+    /*================================================
+   
+   
+  /*====================================
+  =            form styling            =
+  ====================================*/
+  .temp-custom-modal-wrap {
+    margin: 5px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content {
+    position: relative;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-close-button {
+    background: #fff none repeat scroll 0 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-font-size: 21px;
+    -moz-font-size: 21px;
+    -ms-font-size: 21px;
+    font-size: 21px;
+    height: 22px;
+    opacity: 1;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 22px;
+    z-index: 9;
+    box-shadow: 2px 2px 4px #000;
+    line-height: 22px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper {
+    margin-top: 0px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap {
+    padding-top: 20px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap h2 {
+    margin-bottom: 30px;
+    color: #122742;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap .custom-form-label2 a {
+    -webkit-font-size: 12px;
+    -moz-font-size: 12px;
+    -ms-font-size: 12px;
+    font-size: 12px;
+    color: #122742;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap .temp-login-button-wrap {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap img {
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap .temp-custom-select {
+    margin-bottom: 25px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap.temp-subscribe-form-column-wrap .temp-radio-button-subscribe {
+    color: #122742;
+    -webkit-font-size: 13px;
+    -moz-font-size: 13px;
+    -ms-font-size: 13px;
+    font-size: 13px;
+    margin-bottom: 6px;
+    margin-left: 12px !important;
+    margin-top: 6px;
+    padding-left: 10px;
+    display: block;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap.temp-subscribe-form-column-wrap .temp-radio-button-subscribe .temp-radio-checkmark {
+    left: -15px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap.temp-subscribe-form-column-wrap .temp-subscribe-checkbox {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 17px;
+    margin-top: 13px;
+  }
+  
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-forget-password-column-wrap-image h2 {
+    -webkit-font-size: 40px;
+    -moz-font-size: 40px;
+    -ms-font-size: 40px;
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image:after {
+    background: #122742;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.86;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper {
+    z-index: 99;
+    position: relative;
+    color: #fff;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper h2 {
+    -webkit-font-size: 45px;
+    -moz-font-size: 45px;
+    -ms-font-size: 45px;
+    font-size: 45px;
+    text-transform: capitalize;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper p {
+    margin-top: 25px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper p.temp-reg-para {
+    margin-top: 45px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap.temp-reg-anchor-wrap {
+    margin-top: 27px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-anchor {
+    border: 2px solid #42B0E5;
+    color: #fff;
+    display: block;
+    padding: 8px 20px 8px 0;
+    transition: all 0.3s linear 0s;
+  }
+  
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-anchor:focus {
+    text-decoration: none;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-anchor .temp-social-icon-wrap {
+    background: #42b0e5 none repeat scroll 0 0;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 10px 13px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-anchor span {
+    -webkit-font-size: 13px;
+    -moz-font-size: 13px;
+    -ms-font-size: 13px;
+    font-size: 13px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-icon-color {
+    border: 2px solid #c53928;
+    margin-top: 10px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-icon-color:hover {
+    background-color: #d24635;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-icon-color .temp-social-icon-wrap {
+    background-color: #c53928;
+    padding: 10px 12px;
+  }
+  
+  
+  
+  /*=====  End of form styling  ======*/
+  @media only screen and (max-width: 992px) and (min-width: 768px) {
+    /*===========================================
+    =            naviigation section            =
+    ===========================================*/
+   
+  
+    /*=====  End of naviigation section  ======*/
+  }
+  @media only screen and (max-width: 768px) {
+    .custom-row {
+      margin: 0;
+      display: block;
+    }
+  
+    /*============================================
+    =            media query for form            =
+    ============================================*/
+    .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper {
+      margin-top: 15px;
+    }
+    .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper h2 {
+      -webkit-font-size: 32px;
+      -moz-font-size: 32px;
+      -ms-font-size: 32px;
+      font-size: 32px;
+    }
+  
+    .temp-custom-navigation .temp-custom-logo-header .navbar-toggle {
+      border: 0 !important;
+    }
+    .temp-custom-navigation .temp-custom-logo-header .navbar-toggle:hover {
+      background-color: transparent;
+    }
+    .temp-custom-navigation .temp-custom-logo-header .navbar-toggle:focus {
+      background-color: transparent;
+    }
+    .temp-custom-navigation .navbar-collapse {
+      border: 0 !important;
+      box-shadow: none;
+    }
+  
+    /*=====  End of media query for form  ======*/
+  }
+  
+
+ /*=====  End  innovATION FELLLOW form  ======*/
