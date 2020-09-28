@@ -142,3 +142,11 @@
     opacity: 1;
     padding: 10px 20px;
 }
+
+.play-icon {
+    font-size: 50px;
+    top: 25%;
+    position: absolute;
+    left: 46%;
+    color: #A5A5A5;
+}
