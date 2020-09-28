@@ -111,15 +111,34 @@
 .guest-descript-date {
     color: #C896AB;
     opacity: 1;
-    font-size: .5rem;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 0px;
 }
 
 .guest-descript-txt {
     color: #3E1432;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.guest-descript-txt-2 {
+    color: #C896AB;
+    opacity: 1;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0px;
 }
 
 .quest-card-size {
     width: 300px;
+}
+
+.watchnowbtn {
+    background: #C896AB 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #25AF4526;
+    border-radius: 3px;
+    opacity: 1;
+    padding: 10px 20px;
 }
