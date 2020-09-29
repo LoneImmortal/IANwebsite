@@ -44,7 +44,7 @@
 }
 
 .calendarbtn {
-    background: #C896AB 0% 0% no-repeat padding-box;
+    background: #7b5163 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #25AF4526;
     border-radius: 3px;
     opacity: 1;
@@ -149,4 +149,42 @@
     position: absolute;
     left: 46%;
     color: #A5A5A5;
+}
+
+.border-between>[class*='col-']:before {
+    background: #e3e3e3;
+    bottom: 0;
+    content: " ";
+    left: 0;
+    position: absolute;
+    width: 1px;
+    top: 0;
+}
+
+.border-between>[class*='col-']:first-child:before {
+    display: none;
+}
+
+.fellowcaption {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    z-index: 100;
+}
+
+.fellowname {
+    font-size: 1rem;
+    color: #EBC1DF;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Poppins';
+    float: right;
+}
+
+.fellowquote {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Cinzel'
 }
